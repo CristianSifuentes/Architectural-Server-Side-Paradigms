@@ -1,13 +1,51 @@
-# Architectural Server-Side Paradigms
+# Advanced React Architecture (Real Project)
 
-This repository contains a professional, didactic blueprint for building an advanced React project focused on:
+This repository now contains a **real runnable Next.js project** implementing:
 
 - React Server Components (RSC)
 - Streaming SSR with Suspense
-- Edge rendering
+- Edge runtime route rendering
 - Server-Sent Events (SSE)
-- React Compiler architecture mindset
+- React Compiler-ready architecture mindset
 
-## Documentation
+## Quick Start
 
-- **Main guide**: [`docs/ADVANCED_REACT_EDGE_BLUEPRINT.md`](docs/ADVANCED_REACT_EDGE_BLUEPRINT.md)
+```bash
+npm install
+npm run dev
+```
+
+Then open: `http://localhost:3000` and navigate to `/dashboard`.
+
+## Project Structure
+
+```text
+app/
+  layout.tsx
+  page.tsx
+  dashboard/
+    page.tsx
+    loading.tsx
+    _components/
+      RevenuePanel.server.tsx
+      ActivityFeed.server.tsx
+      AlertsClient.client.tsx
+      MetricsSkeleton.tsx
+  api/
+    stream/route.ts
+    health/route.ts
+lib/
+  data/
+  sse/
+  observability/
+  validation/
+components/
+  ui/
+  charts/
+```
+
+## Learning Reference
+
+The full didactic guide remains available in:
+
+- `docs/ADVANCED_REACT_EDGE_BLUEPRINT.md`
